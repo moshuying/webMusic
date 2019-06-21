@@ -12,12 +12,8 @@ function setBgimgStr(ix){
     return "url('./assets/images/夜景 ("+str+").jpg"
 }
 
-function goNextPage(ix){
-    if(ix>=imgbox+1){
-        ix=000;
-    }
-    let then=ix+"%";
-    Lbox.style.right=then;
+function goNextPage(){
+    Lbox.style.right='100%';
 }
 function auto(){
     for (let ix = 0; ix < imgbox.length; ix++) {
@@ -26,7 +22,7 @@ function auto(){
 }
 window.onload=function (){
     setImg();
-    setInterval(goNextPage(200),1000);
+    setInterval(goNextPage(),3000);
 }
 
 function sleep(delay) {
