@@ -20,7 +20,7 @@ body{
     width: 100%;
     height: 3rem;
     background-color: #eeeeee;
-    border-bottom: 1px #050505 solid;
+    border-bottom: 1px #aeaeae solid;
     /* box-shadow: 0 -1px 2px inset #050505; */
 }
 .nav .left{
@@ -130,31 +130,39 @@ body{
 
 }
 .main .public {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 .main .public .picture{
-    width: 80%;
-    height: 500px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
 }
 .main .public .picture .logo{
     width: 80%;
     height: 100%;
+    overflow: hidden;
 }
 .main .public .picture .logo ul{
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     height: 100%;
+    width: 500%;
     margin: 0;
     padding: 0; 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 .main .public .picture .logo ul li{
     float: left;
+    width: 25%;
+    height: 100%;
+    background-size: contain;
     margin: 0;
     padding: 0;
-}
-.main .public .picture .logo ul li imgbox{
-    width: 100%;
-    height: 100%;
 }
 .main h1{
     text-indent: 4rem;
