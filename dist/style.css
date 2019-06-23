@@ -183,7 +183,32 @@ footer{
     bottom: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     color: #ababab;
     background-color: #282828;
+}
+footer a:visited,footer a:active,footer a:hover{
+    text-decoration: none;
+    color: #ababab;
+}
+footer .addres p{
+    font-weight: 300;
+}
+footer .addres p strong{
+    color: #6b6b6b;
+    font-weight: 800;
+}
+footer .footer{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .footer .addres p span{
+    width: 5rem;
+    height: 100%;
+    color: #6b6b6b;
+    font-weight: 800;
 }
