@@ -1,3 +1,7 @@
+// @author: 徐芳 墨抒颖
+// @createTime:2019年6月13日10:04:52
+// @endTime:2019年6月23日10:06:35
+// @source:https://gitee.com/moshuying/webMusic
 var imgbox = document.getElementsByClassName('imgbox');
 var Lbox=document.getElementById('Lbox');
 //设定默认长度
