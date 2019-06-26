@@ -154,7 +154,7 @@ a{
     z-index: 2;
     color: #eee;
     /* background-color: #ffffff00; */
-    background-color: #6b6b6b;
+    /* background-color: #6b6b6b; */
     letter-spacing: 0.5rem;
 }
 .main .public .picture .logo{
@@ -187,7 +187,7 @@ a{
 }
 /* .mainInfo */
 .mainInfo{
-    height: 30rem;
+    height: 40rem;
     width: 80%;
     margin: auto;
     display: flex;
@@ -198,6 +198,7 @@ a{
 .mainInfo .imgBox{
     height: 385px;
     width: 270px;
+    overflow: hidden;
 }
 .mainInfo .imgBox .bgImg{
     height: 100%;
@@ -207,6 +208,9 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.mainInfo .imgBox .bgImg:hover{
+    transform:scale(1.3);
 }
 .mainInfo .imgBox .bgImg span{
     font-size: 3rem;
@@ -222,7 +226,33 @@ a{
     flex-direction: column;
 }
 .mainInfo .info h3{
+    font-size: 1.7rem;
     display: inline-block;
+}
+.mystory{
+    width: 100%;
+    background-color: #f0f6f6;
+    height: 40rem;
+}
+.mystory .headerInfo{
+    width: 100%;
+    text-align: center;
+}
+.mystory .headerInfo span{
+    font-size: 2.6rem;
+}
+.mystory .hrLine {
+    width: 8%;
+    margin: auto;
+}
+.mystory .hrLine .line{
+    height: 3px;
+    border-radius: 5px;
+    background-color: black;
+}
+.mystory .text pre{
+    font-size: 1.4rem;
+    text-align: center;
 }
 footer{
     width: 100%;
