@@ -289,7 +289,7 @@ a{
 .goLike .bgBox .btn{
     font-size: 2rem;
     color: white;
-    background-color: aqua;
+    background-color: rgb(190, 220, 240);
     margin: 14rem 0 0 5rem;
     cursor: pointer;
 }
