@@ -1,37 +1,42 @@
-# webMusic
+# 我的个人网站的构建思路
 
-#### 介绍
-和同学合作的一个页面
+## 主题 
 
-#### 软件架构
-html css js
+我的个人网站,简单介绍我个的人喜好,我的学习状态以及我对网页设计的理解
+
+## 主题色调
+
+浅蓝-->米黄 | 卡其-->青蓝-->粉红
+
+## 网站logo设计
+
+选用了()字体,展现了()
+
+## banner部分
+
+使用我喜欢的图片以及我出去旅游的图片作了一个轮播图,使用了jqurey插件
+
+## 导航栏以及其他页面
+
+#### 首页
+
+我的个人简介
+
+#### 我的爱好
+
+旅游和电影
+
+#### 学习状态
+
+我对学习的思考
+
+#### 音乐
+
+使用了jqurey插件做了一个小音乐播放器
+
+#### 展望未来
+
+在完成这个个人网站的时候,我对网页设计产生了浓厚的兴趣,将来也会在这方面继续深入学习
 
 
-#### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)

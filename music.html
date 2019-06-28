@@ -1,3 +1,7 @@
+<!-- @author: 徐芳 墨抒颖 -->
+<!-- @createTime:2019年6月13日10:04:52 -->
+<!-- @endTime:2019年6月23日10:06:35 -->
+<!-- @source:https://gitee.com/moshuying/webMusic -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,38 +23,42 @@
     <title>徐芳 201832894</title>
 </head>
 <body>
-    <div class="main">
-        <div class="nav">
-                <div class="left">
-                    <img src="./assets/logo/方正简.png" alt="">
-                    <div class="serch">
-                        <input type="text" placeholder="输入任意内容开始跳转...." >
-                        <img src="./assets/svg/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">首页</a></li>
-                            <li><a href="like.html">爱好</a></li>
-                            <li><a href="learn.html">学习</a></li>
-                            <li><a href="music.html">音乐</a></li>
-                            <li><a href="future.html">展望</a></li>
-                        </ul>
-                    </nav>
+    <!-- 导航栏 -->
+    <div class="nav" id="page-top">
+            <div class="left">
+                <img src="./assets/logo/方正简.png" alt="">
+                <div class="serch">
+                    <input type="text" placeholder="输入任意内容开始跳转...." >
+                    <img src="./assets/svg/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
                 </div>
-                <div class="right">
-                    <div class="ricon">
-                        <span class="iconfont icon-zhunbeiliangchan"></span>
-                        <span class="iconfont icon-xiaoxi"></span>
-                        <span class="iconfont icon-guanfangbanben"></span>
-                    </div>
-                    <span class="headerlogo"><img src="./assets/logo/header.jpg" alt=""> <i class="iconfont icon-xiangxiazhanhang "></i> </span>
-                </div>
+                <!-- 超链接到各个页面 -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="like.html">旅行</a></li>
+                        <li><a href="learn.html">学习</a></li>
+                        <li><a href="music.html">音乐</a></li>
+                        <li><a href="future.html">展望</a></li>
+                    </ul>
+                </nav>
             </div>
+            <!-- 右边的小icon,来自阿里icon库 -->
+            <div class="right">
+                <div class="ricon">
+                    <span class="iconfont icon-zhunbeiliangchan"></span>
+                    <span class="iconfont icon-xiaoxi"></span>
+                    <span class="iconfont icon-guanfangbanben"></span>
+                </div>
+                <span class="headerlogo"><img src="./assets/logo/header.jpg" alt=""> <i class="iconfont icon-xiangxiazhanhang "></i> </span>
+            </div>
+        </div>
+        <!-- 构建音乐播放器 -->
         <div class="music">
             <div class="playerMain">
                 <div class="middle">
                     <div class="mainWrap">
                         <div class="leftBar">
+                            <!-- 左侧菜单 -->
                             <ul class="menuUL">
                                 <li class="menuLi cur">
                                     <a href="#">
@@ -71,6 +79,7 @@
                                     </a>
                                 </li>
                             </ul>
+                            <!-- 精品集 -->
                             <div class="collectOut">
                                 <span class="colS">我创建的精选集</span>
                                 <a href="#" class="colA"></a>
@@ -78,6 +87,7 @@
                             <div class="cellectList"></div>
                             <audio id="audio" src="./dist/music/song (1).mp3"></audio>			
                         </div>
+                        <!-- 播放目录 -->
                         <div class="mainBody">
                             <div class="playHd">
                                 <div class="phInner">
@@ -334,6 +344,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 输出歌词 -->
                         <div class="mainOuther">
                             <div class="albumCover">
                                 <a href="#">
@@ -349,6 +360,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 底部控制按钮 -->
                 <div class="bottom">
                     <div class="playerWrap">
                         <div class="playerCon">
@@ -393,5 +405,10 @@
             </div>
         </div>
     </div>
+    <!-- <div id="page-top-btn">
+        <a class="btn" href="#page-top">
+            <i class="iconfont icon-xiangshangzhanhang" style="font-size: 2rem"></i>
+        </a>
+    </div> -->
 </body>
 </html>

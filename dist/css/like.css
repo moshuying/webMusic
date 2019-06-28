@@ -1,0 +1,84 @@
+@charset 'utf-8';
+.fend{
+    align-self: flex-end;
+}
+.fstart{
+    align-self: flex-start;
+}
+.block{
+    display: block;
+}
+.fl{
+    float: left;
+    text-align: left;
+}
+.fr{
+    float: right;
+    text-align: right;
+}
+.tcen{
+    text-align: center;
+}
+.main{
+    width: 80%;
+    max-width: 53rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.main .mylike-header{
+    width: 100%;
+}
+.main .mylike-header .miniInfo{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #a5a5a5;
+}
+.main .mylike-header .miniInfo span{
+    padding-right: 1rem;
+}
+.main .model{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main .model .info-header{
+    width: 100%;
+    height: 100%;
+}
+.main .model .info-header .picture{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .model .info-header .picture img{
+    width: 90%;
+    height: 26rem;
+    background-size: cover;
+}
+.main .model .header-text{
+    width: 90%;
+    height: 100%;
+    font-size: 1.5rem;
+    text-indent: 3rem;
+    letter-spacing: 0.2rem;
+    margin: 0.8rem auto 1rem;
+}
+.main .text-end{
+    margin-bottom: 3rem;
+}
+.main .text-end p{
+    padding-top: 1rem;
+    text-align: right;
+    font-size: 1.2rem;
+}
+.main .text-end h4{
+    text-indent: 2rem;
+    color: #a5a5a5;
+}

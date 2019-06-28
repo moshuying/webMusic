@@ -1,32 +1,36 @@
+// @author: 徐芳 墨抒颖
+// @createTime:2019年6月13日10:04:52
+// @endTime:2019年6月23日10:06:35
+// @source:https://gitee.com/moshuying/webMusic
 var imgbox = document.getElementsByClassName('imgbox');
 var Lbox=document.getElementById('Lbox');
-
+//设定默认长度
+var boxLen=0;
+Lbox.style.right='0%';
+//空字符串
+var str="";
+//装入图片
 function setImg(){
     for(var ix=0;ix<imgbox.length;ix++){
-        imgbox[ix].style.backgroundImage = setBgimgStr(ix);
+        str=ix+1+"";
+        imgbox[ix].style.backgroundImage = "url('./assets/images/夜景 ("+str+").jpg";
     }
 }
 
-function setBgimgStr(ix){
-    var str=ix+1+"";
-    return "url('./assets/images/夜景 ("+str+").jpg"
+function goNextPage(){
+    boxLen+=100;
+    if(boxLen==500){
+        boxLen=0;
+        Lbox.style.right=boxLen+'%';
+    }else{
+        Lbox.style.right=boxLen+'%';
+    }
+    
 }
 
-function goNextPage(ix){
-    if(ix>=imgbox+1){
-        ix=000;
-    }
-    let then=ix+"%";
-    Lbox.style.right=then;
-}
-function auto(){
-    for (let ix = 0; ix < imgbox.length; ix++) {
-        
-    }
-}
 window.onload=function (){
     setImg();
-    setInterval(goNextPage(200),1000);
+    setInterval('goNextPage()',3000);
 }
 
 function sleep(delay) {
@@ -34,4 +38,8 @@ function sleep(delay) {
     while ((new Date()).getTime() - start < delay) {
       continue;
     }
+}
+
+function goLike(){
+    window.location.href="like.html";
 }
