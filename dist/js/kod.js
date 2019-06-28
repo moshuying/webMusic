@@ -39,3 +39,7 @@ function sleep(delay) {
       continue;
     }
 }
+
+function goLike(){
+    window.location.href="like.html";
+}
