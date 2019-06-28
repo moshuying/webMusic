@@ -29,6 +29,11 @@
 .main .mylike-header{
     width: 100%;
 }
+.main .mylike-header h1{
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
 .main .mylike-header .miniInfo{
     width: 93%;
     margin: auto;
