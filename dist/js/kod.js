@@ -11,7 +11,7 @@ Lbox.style.right='0%';
 var str="";
 //装入图片
 function setImg(){
-    for(var ix=0;ix<imgbox.length;ix++){
+    for(let ix=0;ix<imgbox.length;ix++){
         str=ix+1+"";
         imgbox[ix].style.backgroundImage = "url('./assets/images/夜景 ("+str+").jpg";
     }
@@ -27,14 +27,26 @@ function goNextPage(){
     }
     
 }
-
+function getWidth() {
+    let test=document.getElementById('serInput');
+    test.placeholder=document.documentElement.clientWidth;
+    return document.documentElement.clientWidth;
+}
 window.onload=function (){
+    getWidth();
+    if(document.documentElement.clientWidth<600){
+        document.getElementById('serchInput').style.display="none"; 
+        document.getElementById('headerNav').className="mobile";
+    }
     setImg();
     setInterval('goNextPage()',3000);
 }
+window.onresize = function(){
+    document.getElementById("serInput").placeholder="宽度："+document.documentElement.clientWidth+"，高度："+document.documentElement.clientHeight;
+}
 
 function sleep(delay) {
-    var start = (new Date()).getTime();
+    let start = (new Date()).getTime();
     while ((new Date()).getTime() - start < delay) {
       continue;
     }
